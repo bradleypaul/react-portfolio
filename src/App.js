@@ -18,16 +18,12 @@ function App() {
       <Router>
         <header className="flex-row px-1">
           <h2>
-            <NavLink exact to="/" activeStyle={{
-              color: '#F3A847'
-            }}>
               Paul Bradley
-              </NavLink>
           </h2>
           <nav>
             <ul className="flex-row">
               <li className="mx-2">
-                <NavLink exact to="/About" activeStyle={{
+                <NavLink exact to="/" activeStyle={{
                   color: '#F3A847'
                 }}>About Me</NavLink>
               </li>
@@ -55,9 +51,6 @@ function App() {
         <main>
           <Switch>
             <Route exact path="/">
-              <About />
-            </Route>
-            <Route exact path="/About">
               <About />
             </Route>
             <Route path="/Portfolio">

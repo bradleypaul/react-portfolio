@@ -343,6 +343,12 @@ input, label {
   margin-bottom: var(--spacing-two);
 }
 
+.profile {
+  height: 250px;
+  width: auto;
+  overflow: visible;
+}
+
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
