@@ -5,10 +5,8 @@ class Portfolio extends React.Component {
   render() {
     return (
       <section>
-        {/* <h1 data-testid="h1tag">{capitalizeFirstLetter(name)}</h1>
-      <p>{description}</p>
-      <PhotoList category={currentCategory.name} /> */}
-      <h1>My Projects</h1>
+        <h1>My Projects</h1>
+        <PhotoList />
       </section>
     );
   }
