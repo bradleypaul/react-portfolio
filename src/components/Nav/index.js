@@ -1,19 +1,21 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function Nav(props) {
   const {
-    categories = [],
-    setCurrentCategory,
-    currentCategory,
     contactSelected,
-    setContactSelected
+    setContactSelected,
+    portfolioSelected,
+    setPortfolioSelected
   } = props;
-
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
-
+  function toggleActive(e) {
+    
+  }
   return (
     <header className="flex-row px-1">
       <h2>
@@ -28,25 +30,13 @@ function Nav(props) {
               About me
             </a>
           </li>
+          <li className={`mx-2 ${portfolioSelected && 'navActive'}`}>
+            <span onClick={() => setPortfolioSelected(true)}>Portfolio</span>
+          </li>
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && `navActive`
-                }`}
-              key={category.name}
-            >
-              <span onClick={() => {
-                setCurrentCategory(category);
-                setContactSelected(false);
-              }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))}
+
           <li>
             Resume
           </li>
