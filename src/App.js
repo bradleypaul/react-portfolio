@@ -23,7 +23,6 @@ function App() {
             }}>
               Paul Bradley
               </NavLink>
-
           </h2>
           <nav>
             <ul className="flex-row">
@@ -55,7 +54,6 @@ function App() {
         </header>
         <main>
           <Switch>
-
             <Route exact path="/">
               <About />
             </Route>
