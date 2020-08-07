@@ -23,24 +23,24 @@ function App() {
           <nav>
             <ul className="flex-row">
               <li className="mx-2">
-                <NavLink exact to="/" activeStyle={{
+                <NavLink exact to="/react-portfolio/" activeStyle={{
                   color: '#F3A847'
                 }}>About Me</NavLink>
               </li>
               <li className="mx-2">
-                <NavLink to="/Portfolio" activeStyle={{
+                <NavLink to="/react-portfolio/Portfolio" activeStyle={{
                   color: '#F3A847'
                 }}>
                   Portfolio
                 </NavLink>
               </li>
               <li className="mx-2">
-                <NavLink to="/Contact" activeStyle={{
+                <NavLink to="/react-portfolio/Contact" activeStyle={{
                   color: '#F3A847'
                 }}>Contact</NavLink>
               </li>
               <li className="mx-2">
-                <NavLink to="/Resume"
+                <NavLink to="/react-portfolio/Resume"
                   activeStyle={{
                     color: '#F3A847'
                   }}>Resume</NavLink>
@@ -50,16 +50,16 @@ function App() {
         </header>
         <main>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/react-portfolio">
               <About />
             </Route>
-            <Route path="/Portfolio">
+            <Route path="/react-portfolio/Portfolio">
               <Portfolio />
             </Route>
-            <Route path="/Contact">
+            <Route path="/react-portfolio/Contact">
               <ContactForm />
             </Route>
-            <Route path="/Resume">
+            <Route path="/react-portfolio/Resume">
               <Resume />
             </Route>
           </Switch>
