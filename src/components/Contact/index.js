@@ -4,25 +4,26 @@ import { validateEmail, capitalizeFirstLetter } from '../../utils/helpers';
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
   const [errorMessage, setErrorMessage] = useState('');
+  const [validEmail, setValidEmail] = useState('');
   const { name, email, message } = formState;
 
   function handleChange(e) {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      console.log(isValid);
-      if (!isValid) {
-        setErrorMessage(`Your email is invalid.
-         It needs to have an @ sign.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-
     if(e.target.value === '') {
       setErrorMessage(`${capitalizeFirstLetter(e.target.name)} field cannot be empty.`);
     } else {
       setErrorMessage('');
     }
+    
+    if (e.target.name === 'email') {
+      const isValid = validateEmail(e.target.value);
+      if (!isValid) {
+        setValidEmail(`Your email is invalid.`);
+      } else {
+        setValidEmail('');
+      }
+    }
+
+    
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
     }
@@ -52,6 +53,7 @@ function ContactForm() {
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
+            <p className="error-text">{validEmail}</p>
           </div>
         )}
         <button type="submit" onSubmit={handleSubmit}>Submit</button>
