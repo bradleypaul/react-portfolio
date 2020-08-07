@@ -18,6 +18,30 @@ const PhotoList = () => {
       site: "https://bradleypaul.github.io/dm-emergency-paper-locator/",
       description: 'Easily locate online retail sources with essential paper products in stock',
     },
+    {
+      name: 'Budget Tracker',
+      repo: "https://github.com/bradleypaul/budget-tracker",
+      site: "https://blooming-tundra-95527.herokuapp.com/",
+      description: 'A simple budget tracker for one user that demonstrates the use of PWAs, ServiceWorkers, and IndexedDB for offline use.',
+    },
+    {
+      name: 'Password Generator (React)',
+      repo: "https://github.com/bradleypaul/password-gen-react/",
+      site: "https://password-gen-react.herokuapp.com/",
+      description: 'Password generator written in React to demonstrate using state.',
+    },
+    {
+      name: 'Pumpkins',
+      repo: "https://github.com/bradleypaul/pumpkins",
+      site: "https://bradleypaul.github.io/pumpkins/",
+      description: 'Password generator written in React to demonstrate using state.',
+    },
+    {
+      name: 'Food Festival',
+      repo: "https://github.com/bradleypaul/food-festival",
+      site: "https://bradleypaul.github.io/food-festival/",
+      description: 'Food Festival app for foodies everywhere!',
+    },
     
   ]);
 
