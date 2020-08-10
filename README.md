@@ -1,5 +1,19 @@
+# react-portfolio
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+```bash
+git clone https://github.com/bradleypaul/react-portfolio.git
+cd react-portfolio
+npm install
+npm start
+```
+
+## Contact
+[Github account](https://github.com/bradleypaul/react-portfolio)
+
+[Email](mailto:bradleypauld@gmail.com)
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,3 +80,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## License
+MIT License

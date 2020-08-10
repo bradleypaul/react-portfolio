@@ -19,7 +19,7 @@ Lectus arcu bibendum at varius vel pharetra vel turpis nunc. Libero id faucibus 
 Ut eu sem integer vitae justo eget magna fermentum. Maecenas pharetra convallis posuere morbi leo urna molestie at. Lectus magna fringilla urna porttitor rhoncus dolor purus non. Aliquet lectus proin nibh nisl condimentum id. Velit euismod in pellentesque massa placerat. Neque viverra justo nec ultrices dui sapien eget mi. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Cras tincidunt lobortis feugiat vivamus. Facilisi cras fermentum odio eu feugiat pretium nibh. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Vivamus at augue eget arcu. Amet dictum sit amet justo donec enim. Auctor urna nunc id cursus metus aliquam eleifend.
 
 Ipsum dolor sit amet consectetur. Placerat orci nulla pellentesque dignissim. Cum sociis natoque penatibus et. Nec ultrices dui sapien eget mi proin sed libero. Nunc vel risus commodo viverra maecenas accumsan lacus vel. Sed risus pretium quam vulputate dignissim suspendisse in est. Sem viverra aliquet eget sit amet tellus cras adipiscing. In dictum non consectetur a. Pretium viverra suspendisse potenti nullam ac. Sed velit dignissim sodales ut. Quis enim lobortis scelerisque fermentum. Amet mauris commodo quis imperdiet massa. Condimentum mattis pellentesque id nibh tortor id aliquet.</div>
-        <img src={coverImage} className="my-2 " style={{ width: "50%", height: 'auto' }} alt="cover" />
+        <img src={coverImage} className="my-2 " style={{ minWidth: "50%", height: 'auto', objectFit:'scale-down' }} alt="cover" />
       </section>
 
     </section>
