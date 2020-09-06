@@ -7,6 +7,13 @@ const PhotoList = () => {
 
   const [photos] = useState([
     {
+      name: "Whatapot",
+      repo: "https://github.com/bradleypaul/Whatapot",
+      site: "https://enigmatic-escarpment-05976.herokuapp.com/",
+      description: `Website for sharing and collaborating about
+      recipes and other cooking things.`
+    },
+    {
       name: 'Moto Services',
       repo: 'https://github.com/bradleypaul/motor-services',
       site: "https://motor-services.herokuapp.com/welcome",
